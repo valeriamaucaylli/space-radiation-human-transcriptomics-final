@@ -12,7 +12,7 @@
 2. Programa de Pós-Graduação em Medicina Aeroespacial, Unyleya, Brazil.
 3. Liminal Research Group, Lima, Peru.
 4. Psicología, Facultad de Derecho y Ciencias Humanas, Universidad Tecnológica del Perú (UTP), Lima, Peru.
-5. Medicina humana, Facultad de Ciencias Médicas, Universidad Nacional de La Plata, Buenos Aires, Argentina.
+5. Obstetricia, Facultad de Ciencias de la Salud, Universidad de Huánuco, Huánuco, Peru.
 
 ## Corresponding author
 
