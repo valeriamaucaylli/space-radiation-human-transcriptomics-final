@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the authors and the original NASA OSDR/GeneLab/GEO source datasets. A permanent archive DOI will be added after deposition."
+title: "Human spaceflight transcriptomics: radiation and simulated microgravity — reproducible analysis and locked results"
+type: software
+authors:
+  - family-names: "Maucaylli Campos"
+    given-names: "Valeria Luz"
+    orcid: "https://orcid.org/0000-0003-4523-9392"
+    affiliation: "Universidade Estadual do Ceará (UECE); Unyleya; Liminal Research Group"
+  - family-names: "Maucaylli Campos"
+    given-names: "Claudia Andrea"
+    orcid: "https://orcid.org/0009-0002-6604-798X"
+    affiliation: "Liminal Research Group; Universidad Tecnológica del Perú (UTP)"
+  - family-names: "Herrada-Torres"
+    given-names: "José Santos"
+    orcid: "https://orcid.org/0009-0009-1302-8049"
+    affiliation: "Universidad Nacional de La Plata"
+repository-code: "https://github.com/valeriamaucaylli/space-radiation-human-transcriptomics"
+license: MIT
+keywords:
+  - spaceflight
+  - transcriptomics
+  - space radiation
+  - simulated microgravity
+  - bioinformatics
+  - NASA OSDR

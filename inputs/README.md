@@ -1,0 +1,1 @@
+Inputs are *not* distributed in this GitHub archive. Use source-authorized datasets and maintain the governed sample-level files locally only. See docs/REPRODUCTION_INPUT_CONTRACT.md and data/DATASET_REGISTRY.md.

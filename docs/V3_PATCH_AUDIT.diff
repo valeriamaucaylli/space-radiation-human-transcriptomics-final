@@ -1,0 +1,38 @@
+--- original/analysis_08A_canonical_R.R
++++ v3_patched/analysis_08A_canonical_R_v3_patched.R
+@@ -17,7 +17,7 @@
+ I <- file.path(base,"inputs")
+ PATH_ORDER <- c("Oxidative stress (ROS)","DNA repair","Mitochondrial/OXPHOS","Inflammation")
+
+-j <- fromJSON(file.path(I,"pathway_sets_2026_1_Hs.json"), simplifyVector=FALSE)
++j <- fromJSON(paste(readLines(file.path(I,"pathway_sets_2026_1_Hs.json"), warn=FALSE), collapse="\n"), simplifyVector=FALSE)
+ PATHWAYS <- lapply(PATH_ORDER, function(p) unique(unlist(j$pathways[[p]]$ensembl_ids, use.names=FALSE)))
+ names(PATHWAYS) <- PATH_ORDER
+
+@@ -74,7 +74,7 @@
+   res <- results(dds,contrast=c("condition","post","pre"),independentFiltering=FALSE)
+   rdf <- as.data.frame(res); rdf$gene_id<-rownames(rdf)
+   write.csv(rdf,file.path(out,paste0(label,"_DESeq2_gene_results.csv")),row.names=FALSE)
+-  run_fgsea(res$stat,label,file.path(out,paste0(label,"_fgsea_Wald.csv")))
++  run_fgsea(setNames(res$stat, rownames(res)),label,file.path(out,paste0(label,"_fgsea_Wald.csv")))
+
+   vs <- assay(varianceStabilizingTransformation(dds,blind=FALSE))
+   rows<-list(); k<-1
+@@ -104,7 +104,7 @@
+ dds<-DESeq(DESeqDataSetFromMatrix(gm,cd,design=~condition),quiet=TRUE)
+ res<-results(dds,contrast=c("condition","uG","oneG"),independentFiltering=FALSE)
+ rdf<-as.data.frame(res); rdf$gene_id<-rownames(rdf); write.csv(rdf,file.path(out,"GSE218935_DESeq2_rerun.csv"),row.names=FALSE)
+-run_fgsea(res$stat,"GSE218935_uG_vs_1G",file.path(out,"GSE218935_fgsea_Wald.csv"))
++run_fgsea(setNames(res$stat, rownames(res)),"GSE218935_uG_vs_1G",file.path(out,"GSE218935_fgsea_Wald.csv"))
+ # direct concordance with deposited DESeq2 columns
+ ix<-intersect(rownames(rdf),rownames(g)); cc<-cor(rdf[ix,"stat"],g[ix,"stat.uG_vs_oneG"],use="pairwise.complete.obs",method="spearman")
+ write.csv(data.frame(comparison="rerun_vs_deposited_DESeq2_Wald",spearman_rho=cc),file.path(out,"GSE218935_DESeq2_concordance.csv"),row.names=FALSE)
+@@ -120,7 +120,7 @@
+   dds<-DESeq(DESeqDataSetFromMatrix(mm,cd,design=~condition),quiet=TRUE)
+   res<-results(dds,contrast=c("condition","exposed","control"),independentFiltering=FALSE)
+   rdf<-as.data.frame(res); rdf$gene_id<-rownames(rdf); write.csv(rdf,file.path(out,paste0(label,"_DESeq2_gene_results.csv")),row.names=FALSE)
+-  run_fgsea(res$stat,label,file.path(out,paste0(label,"_fgsea_Wald.csv")))
++  run_fgsea(setNames(res$stat, rownames(res)),label,file.path(out,paste0(label,"_fgsea_Wald.csv")))
+   vs<-assay(varianceStabilizingTransformation(dds,blind=FALSE)); rows<-list();k<-1
+   for(p in PATH_ORDER){ids<-intersect(PATHWAYS[[p]],rownames(vs)); a<-colMeans(vs[ids,exp_samples,drop=FALSE]);b<-colMeans(vs[ids,ctl_samples,drop=FALSE]);rows[[k]]<-data.frame(analysis=label,pathway=p,n_genes=length(ids),mean_delta=mean(a)-mean(b),p_exact=exact_twogroup(a,b));k<-k+1}
+   z<-do.call(rbind,rows);z$p_holm_4<-holm(z$p_exact);write.csv(z,file.path(out,paste0(label,"_confirmatory_pathway_scores.csv")),row.names=FALSE)

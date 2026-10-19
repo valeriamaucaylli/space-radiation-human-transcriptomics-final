@@ -1,0 +1,61 @@
+analysis,pathway,n_biological_units,n_genes,effect_mean_delta,p_exact,p_holm4,direction,locked_inference,source
+Ax1_Rplus24h_vs_Lminus2wk,DNA repair,2,272,-0.0151033472622011,0.5,1.0,DOWN,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+Ax1_Rplus24h_vs_Lminus2wk,Inflammation,2,140,0.0084011135047648,1.0,1.0,UP,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+Ax1_Rplus24h_vs_Lminus2wk,Mitochondrial/OXPHOS,2,195,0.167773865636933,0.5,1.0,UP,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+Ax1_Rplus24h_vs_Lminus2wk,Oxidative stress (ROS),2,47,0.197502291245705,0.5,1.0,UP,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+GSE218935_uG_vs_1G,DNA repair,3 vs 3,280,0.0230746978982931,0.6,1.0,UP,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_replicate_test + canonical_R_DESeq2_validation
+GSE218935_uG_vs_1G,Inflammation,3 vs 3,165,-0.1224962600195347,0.6,1.0,DOWN,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_replicate_test + canonical_R_DESeq2_validation
+GSE218935_uG_vs_1G,Mitochondrial/OXPHOS,3 vs 3,198,0.0129498446446714,0.9,1.0,UP,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_replicate_test + canonical_R_DESeq2_validation
+GSE218935_uG_vs_1G,Oxidative stress (ROS),3 vs 3,48,0.021894757215449,0.9,1.0,UP,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_replicate_test + canonical_R_DESeq2_validation
+I4_Rplus1_vs_mean_pre,DNA repair,4,272,-0.0114829916431944,0.75,1.0,DOWN,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+I4_Rplus1_vs_mean_pre,Inflammation,4,140,0.0982790993974167,0.25,1.0,UP,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+I4_Rplus1_vs_mean_pre,Mitochondrial/OXPHOS,4,195,-0.0193823400873903,0.75,1.0,DOWN,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+I4_Rplus1_vs_mean_pre,Oxidative stress (ROS),4,47,-0.0459496308939304,0.25,1.0,DOWN,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+OSD129_Combined_uG_IR_vs_1G_NoIR,DNA repair,5,268,0.0608385473110322,0.0625,0.25,UP,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_donor_test + canonical_R_limma_validation
+OSD129_Combined_uG_IR_vs_1G_NoIR,Inflammation,5,154,0.0495948343200145,0.8125,0.8125,UP,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_donor_test + canonical_R_limma_validation
+OSD129_Combined_uG_IR_vs_1G_NoIR,Mitochondrial/OXPHOS,5,171,-0.0629520654944046,0.125,0.375,DOWN,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_donor_test + canonical_R_limma_validation
+OSD129_Combined_uG_IR_vs_1G_NoIR,Oxidative stress (ROS),5,39,0.0636356618530727,0.25,0.5,UP,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_donor_test + canonical_R_limma_validation
+OSD129_Interaction_Radiation_x_Microgravity,DNA repair,5,268,-0.0086364296890738,0.25,1.0,DOWN,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_donor_test + canonical_R_limma_validation
+OSD129_Interaction_Radiation_x_Microgravity,Inflammation,5,154,-0.197635583565926,0.375,1.0,DOWN,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_donor_test + canonical_R_limma_validation
+OSD129_Interaction_Radiation_x_Microgravity,Mitochondrial/OXPHOS,5,171,0.0052344272178289,1.0,1.0,UP,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_donor_test + canonical_R_limma_validation
+OSD129_Interaction_Radiation_x_Microgravity,Oxidative stress (ROS),5,39,-0.0199688602554699,0.75,1.0,DOWN,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_donor_test + canonical_R_limma_validation
+OSD129_Microgravity_noIR,DNA repair,5,268,0.0508570449578177,0.0625,0.25,UP,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_donor_test + canonical_R_limma_validation
+OSD129_Microgravity_noIR,Inflammation,5,154,0.250798405403304,0.25,0.5,UP,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_donor_test + canonical_R_limma_validation
+OSD129_Microgravity_noIR,Mitochondrial/OXPHOS,5,171,-0.1194383766174904,0.0625,0.25,DOWN,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_donor_test + canonical_R_limma_validation
+OSD129_Microgravity_noIR,Oxidative stress (ROS),5,39,0.0086792824730742,0.9375,0.9375,UP,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_donor_test + canonical_R_limma_validation
+OSD129_Microgravity_with_IR,DNA repair,5,268,0.0422206152687439,0.0625,0.25,UP,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_donor_test + canonical_R_limma_validation
+OSD129_Microgravity_with_IR,Inflammation,5,154,0.053162821837378,0.875,1.0,UP,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_donor_test + canonical_R_limma_validation
+OSD129_Microgravity_with_IR,Mitochondrial/OXPHOS,5,171,-0.1142039493996615,0.125,0.375,DOWN,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_donor_test + canonical_R_limma_validation
+OSD129_Microgravity_with_IR,Oxidative stress (ROS),5,39,-0.0112895777823957,0.6875,1.0,DOWN,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_donor_test + canonical_R_limma_validation
+OSD129_Radiation_at_1G,DNA repair,5,268,0.0186179320422883,0.125,0.5,UP,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_donor_test + canonical_R_limma_validation
+OSD129_Radiation_at_1G,Inflammation,5,154,-0.0035679875173635,1.0,1.0,DOWN,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_donor_test + canonical_R_limma_validation
+OSD129_Radiation_at_1G,Mitochondrial/OXPHOS,5,171,0.0512518839052568,0.1875,0.5625,UP,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_donor_test + canonical_R_limma_validation
+OSD129_Radiation_at_1G,Oxidative stress (ROS),5,39,0.0749252396354684,0.1875,0.5625,UP,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_donor_test + canonical_R_limma_validation
+OSD129_Radiation_at_uG,DNA repair,5,268,0.0099815023532144,0.3125,0.625,UP,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_donor_test + canonical_R_limma_validation
+OSD129_Radiation_at_uG,Inflammation,5,154,-0.2012035710832895,0.4375,0.625,DOWN,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_donor_test + canonical_R_limma_validation
+OSD129_Radiation_at_uG,Mitochondrial/OXPHOS,5,171,0.0564863111230858,0.1875,0.5625,UP,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_donor_test + canonical_R_limma_validation
+OSD129_Radiation_at_uG,Oxidative stress (ROS),5,39,0.0549563793799984,0.125,0.5,UP,NOT_SIGNIFICANT_AFTER_HOLM,prelock_exact_donor_test + canonical_R_limma_validation
+OSD577_Angiogenesis_GCRsim0.5Gy,DNA repair,,311,-0.0164868531905036,0.833333333333333,1.0,DOWN,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+OSD577_Angiogenesis_GCRsim0.5Gy,Inflammation,,173,0.0304635446716004,0.587301587301587,1.0,UP,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+OSD577_Angiogenesis_GCRsim0.5Gy,Mitochondrial/OXPHOS,,200,0.0303882006287139,0.73015873015873,1.0,UP,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+OSD577_Angiogenesis_GCRsim0.5Gy,Oxidative stress (ROS),,49,0.0529164640572155,0.428571428571429,1.0,UP,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+OSD577_Mature_GCRsim0.5Gy,DNA repair,,311,-0.0761823329857858,0.0714285714285714,0.285714285714286,DOWN,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+OSD577_Mature_GCRsim0.5Gy,Inflammation,,173,0.0276264100353956,0.301587301587302,0.904761904761905,UP,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+OSD577_Mature_GCRsim0.5Gy,Mitochondrial/OXPHOS,,200,-0.0061695696438679,0.992063492063492,1.0,DOWN,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+OSD577_Mature_GCRsim0.5Gy,Oxidative stress (ROS),,49,0.0231967291142254,0.73015873015873,1.0,UP,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+OSD993_Cs137_gamma_4Gy,DNA repair,,311,-0.0087523944240484,0.2,0.8,DOWN,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+OSD993_Cs137_gamma_4Gy,Inflammation,,173,0.0040750436974921,0.4,1.0,UP,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+OSD993_Cs137_gamma_4Gy,Mitochondrial/OXPHOS,,200,0.0032927248115246,1.0,1.0,UP,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+OSD993_Cs137_gamma_4Gy,Oxidative stress (ROS),,49,-0.0106043914893075,0.5,1.0,DOWN,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+OSD993_Fe56_4Gy,DNA repair,,311,0.0080753605975854,0.1,0.4,UP,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+OSD993_Fe56_4Gy,Inflammation,,173,0.0475824495122161,0.1,0.4,UP,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+OSD993_Fe56_4Gy,Mitochondrial/OXPHOS,,200,0.0319920770643751,0.1,0.4,UP,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+OSD993_Fe56_4Gy,Oxidative stress (ROS),,49,0.0728570478135708,0.1,0.4,UP,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+OSD993_Proton_4Gy,DNA repair,,311,0.0037802332985705,0.3,0.4,UP,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+OSD993_Proton_4Gy,Inflammation,,173,0.0479125607593591,0.1,0.4,UP,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+OSD993_Proton_4Gy,Mitochondrial/OXPHOS,,200,0.0196047659517848,0.1,0.4,UP,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+OSD993_Proton_4Gy,Oxidative stress (ROS),,49,0.0580981555677891,0.1,0.4,UP,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+OSD993_Si28_4Gy,DNA repair,,311,0.0016125363208718,0.2,0.4,UP,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+OSD993_Si28_4Gy,Inflammation,,173,0.0385027491569456,0.1,0.4,UP,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+OSD993_Si28_4Gy,Mitochondrial/OXPHOS,,200,0.0246148708247844,0.1,0.4,UP,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
+OSD993_Si28_4Gy,Oxidative stress (ROS),,49,0.0545138512264831,0.1,0.4,UP,NOT_SIGNIFICANT_AFTER_HOLM,canonical_R
