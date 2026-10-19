@@ -9,10 +9,10 @@
 ## Affiliations
 
 1. Programa de Pós-Graduação em Saúde Coletiva (PPSAC), Centro de Ciências da Saúde (CCS), Universidade Estadual do Ceará (UECE), Ceará, Brazil.
-2. Programa de Pós-Graduação em Medicina Aeroespacial, Unyleya, Brazil.
+2. Programa de Pós-Graduação em Medicina Aeroespacial, Faculdade Unyleya, Brazil.
 3. Liminal Research Group, Lima, Peru.
 4. Psicología, Facultad de Derecho y Ciencias Humanas, Universidad Tecnológica del Perú (UTP), Lima, Peru.
-5. Obstetricia, Facultad de Ciencias de la Salud, Universidad de Huánuco, Huánuco, Peru.
+5. Obstetricia, Facultad de Ciencias de la Salud, Universidad de Huánuco (UDH), Huánuco, Peru.
 
 ## Corresponding author
 
